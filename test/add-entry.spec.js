@@ -33,12 +33,6 @@ describe('add-entry HTML', () => {
     expect(form).not.toBeNull();
   });
 
-  it('Should have an textarea and input', async () => {
-    await page.goto(addEntryPage);
-    const textarea = await page.$$('form > textarea');
-    const inputs = await page.$$('form > input');
-    expect(textarea.length).toBeGreaterThan(0);
-    expect(inputs.length).toBeGreaterThan(0);
   });
 
   it('Should have a link', async () => {
